@@ -9,17 +9,20 @@
     max-width: 800px;
     margin: 20px auto;
     padding: 10px;
-    border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #272727;
 
+}
+
+#chat-container h1 {
+    color: #fff;
+    text-align: center;
 }
 
 #messages-container {
     max-height: 800px;
     overflow-y: auto;
     margin-bottom: 10px;
-    border-bottom: 1px solid #ccc;
     padding-bottom: 10px;
 }
 
@@ -51,7 +54,10 @@
     border-radius: 15px;
 }
 
-#newMessage
+#newMessage:focus {
+    outline: none;
+    border: none;
+}
 
 .message {
     width: fit-content;
